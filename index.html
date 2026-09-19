@@ -3,10 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>aTESTdW</title>
+    <title>Truth-Tables</title>
+    <link rel="stylesheet" href="grid.css">
 </head>
 <body>
-    <h1>aTESTdW</h1>
-    <h2>NAH PLZ WORK PLZ PLZ PLZ</h2>
+    <h1>Welcome to My Website</h1>
+    <h2>Hard truth tables to create:</h2>
+    <div class="excel-grid">
+  <!-- Top Header Row -->
+  <div class="corner-header"></div> 
+  <div class="column-header">A</div>
+  <div class="column-header">B</div>
+  <div class="column-header">C</div>
+  <div class="column-header">D</div>
+
+  <!-- Row 1 -->
+  <div class="row-header">1</div>
+  <div class="cell">0</div>
+  <div class="cell">0</div>
+  <div class="cell">0</div>
+  <div class="cell">0</div>
+
+  <!-- Row 2 -->
+  <div class="row-header">2</div>
+  <div class="cell">0</div>
+  <div class="cell">0</div>
+  <div class="cell">1</div>
+  <div class="cell">0</div>
+
+  <!-- Row 3 -->
+  <div class="row-header">3</div>
+  <div class="cell">0</div>
+  <div class="cell">1</div>
+  <div class="cell">0</div>
+  <div class="cell">0</div>
+
+  <div class="row-header">4</div>
+  <div class="cell">0</div>
+  <div class="cell">1</div>
+  <div class="cell">1</div>
+  <div class="cell">1</div>
+
+  <div class="row-header">5</div>
+  <div class="cell">1</div>
+  <div class="cell">0</div>
+  <div class="cell">0</div>
+  <div class="cell">0</div> 
+
+  <div class="row-header">6</div>
+  <div class="cell">1</div>
+  <div class="cell">0</div>
+  <div class="cell">1</div>
+  <div class="cell">1</div>
+
+  <div class="row-header">7</div>
+  <div class="cell">1</div>
+  <div class="cell">1</div>
+  <div class="cell">0</div>
+  <div class="cell">1</div>
+
+  <div class="row-header">8</div>
+  <div class="cell">1</div>
+  <div class="cell">1</div>
+  <div class="cell">1</div>
+  <div class="cell">1</div>
+</div>
+  <!-- Put this right underneath your closing truth-table-grid div -->
+  <div class="answer-section">
+    <button id="showAnswerBtn" class="btn-answer">Show Answer</button>
+    
+    <div id="answerImageContainer" class="image-container hidden">
+      <!-- Swap the src value with your local file name (e.g., answer.png, gate-diagram.jpg) -->
+       <h3>Two or more 1s</h3>
+      <h3>Truth Table Solution: A&middot;B + A&middot;C + B&middot;C</h3>    
+    </div>
+  </div>
+  <script src="grid.js"></script>
+
+
 </body>
 </html>

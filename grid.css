@@ -1,0 +1,113 @@
+body {
+  margin: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: #f3f3f3;
+}
+
+.excel-grid {
+  display: grid; /* */
+  /* Column 1 is 40px (for numbers). Next 8 columns are 120px each */
+  grid-template-columns: 40px repeat(4, 120px); 
+  /* Auto assigns heights to the rows based on cell contents */
+  grid-template-rows: auto; 
+  background-color: #cbd5e1; /* Visual color for grid lines */
+  gap: 1px; /* Emulates Excel grid line separation */
+  border: 1px solid #cbd5e1;
+  width: max-content;
+}
+
+/* Headers style (Gray, centered text) */
+.corner-header, .column-header, .row-header {
+  background-color: #e2e8f0;
+  color: #475569;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none; /* Prevents text selection highlighting */
+  font-weight: 600;
+  height: 25px;
+}
+
+/* Worksheet Input Cells */
+.cell {
+  background-color: #ffffff;
+  min-height: 25px;
+  padding: 4px;
+  font-size: 13px;
+  color: #334155;
+  outline: none; /* Removes standard browser text outline */
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* Excel Style Focus Ring */
+.cell:focus {
+  outline: 2px solid #107c41; /* Classic Excel Green */
+  z-index: 2; /* Ensures the border overlaps adjacent cells cleanly */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.answer-section {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Styled Button resembling modern web interfaces */
+.btn-answer {
+  background-color: #107c41; /* Excel green accent style */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  width: max-content;
+  transition: background-color 0.2s;
+}
+
+.btn-answer:hover {
+  background-color: #0b592e;
+}
+
+/* Image container block sizing constraints */
+.image-container {
+  margin-top: 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: white;
+  width: max-content;
+  max-width: 100%;
+}
+
+.answer-img {
+  max-width: 500px; /* Limits the display sizing layer */
+  height: auto;
+  display: block;
+  border-radius: 4px;
+}
+
+/* The structural layout class layer used to vanish elements */
+.hidden {
+  display: none !important;
+}
+
